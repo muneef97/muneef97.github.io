@@ -285,7 +285,7 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
   </div>
   <div class="skills">
     <div class="card reveal"><h3>Machine learning and AI</h3><div class="chips">
-      <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">LightGBM</span><span class="chip">SHAP</span><span class="chip">PyTorch</span><span class="chip">NLP</span><span class="chip">BiLSTM</span><span class="chip">Transformers</span><span class="chip">LangGraph</span><span class="chip">FastAPI</span><span class="chip">OpenCV</span><span class="chip">R</span>
+      <span class="chip">Python</span><span class="chip">scikit-learn</span><span class="chip">LightGBM</span><span class="chip">SHAP</span><span class="chip">PyTorch</span><span class="chip">NLP</span><span class="chip">BiLSTM</span><span class="chip">Transformers</span><span class="chip">LangGraph</span><span class="chip">FastAPI</span><span class="chip">R</span>
     </div></div>
     <div class="card reveal"><h3>Data engineering</h3><div class="chips">
       <span class="chip">SQL</span><span class="chip">PostgreSQL</span><span class="chip">DuckDB</span><span class="chip">Databricks</span><span class="chip">PySpark</span><span class="chip">ETL / ELT</span><span class="chip">Star schema modelling</span><span class="chip">Neo4j</span><span class="chip">Microsoft Fabric (learning)</span>
@@ -303,7 +303,7 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
   <div class="reveal">
     <div class="eyebrow">More work</div>
     <h2>Projects</h2>
-    <p class="sub">University and personal projects. Hover a tile to see it come to life.</p>
+    <p class="sub">Each project links to its code on GitHub. Hover a tile to see it come to life.</p>
   </div>
 
   <div class="filters reveal" role="group" aria-label="Filter projects">
@@ -311,7 +311,6 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
     <button data-f="ml">ML and AI</button>
     <button data-f="data">Data engineering</button>
     <button data-f="bi">Analytics and BI</button>
-    <button data-f="build">Apps</button>
   </div>
 
   <div class="grid">
@@ -321,66 +320,56 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
       <div class="chips"><span class="chip">FastAPI</span><span class="chip">LangGraph</span><span class="chip">JSON Schema</span><span class="chip">Threat modelling</span></div>
       <a class="repo" href="https://github.com/muneef97/cerberus-ms-guardrail" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
+    <div class="card proj reveal" data-c="ml">
+      <div class="meta">Deep learning · NLP</div><h3>Medical abstract classifier</h3>
+      <p>A BiLSTM in PyTorch that sorts medical abstracts into five disease categories, comparing corpus-trained FastText with pretrained BioWordVec embeddings, plus an interactive prediction widget.</p>
+      <div class="chips"><span class="chip">PyTorch</span><span class="chip">BiLSTM</span><span class="chip">FastText</span><span class="chip">BioWordVec</span></div>
+      <a class="repo" href="https://github.com/muneef97/medical-abstract-classifier" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
     <div class="card proj reveal" data-c="data">
-      <div class="meta">Data warehousing · UWA</div><h3>Airline passenger data warehouse</h3>
-      <p>Designed a star-schema warehouse for airline passenger data in PostgreSQL and Databricks with Tableau reporting, plus a Neo4j graph database of airline routes.</p>
-      <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Databricks</span><span class="chip">Tableau</span><span class="chip">Neo4j</span></div>
+      <div class="meta">Data warehousing</div><h3>Airline passenger data warehouse</h3>
+      <p>A star-schema warehouse for airline passenger data in PostgreSQL with a Python ETL and Tableau reporting, plus a Neo4j graph database of airline routes.</p>
+      <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">ETL</span><span class="chip">Tableau</span><span class="chip">Neo4j</span></div>
       <div>
       <a class="repo" href="https://github.com/muneef97/airline-passenger-data-warehouse" target="_blank" rel="noopener">Warehouse on GitHub →</a>
       <a class="repo" href="https://github.com/muneef97/airline-route-graph-neo4j" target="_blank" rel="noopener">Neo4j graph on GitHub →</a>
       </div>
     </div>
     <div class="card proj reveal" data-c="bi">
-      <div class="meta">Business intelligence · UWA</div><h3>UK labour market dashboard</h3>
+      <div class="meta">Business intelligence</div><h3>UK labour market dashboard</h3>
       <p>A one-page Power BI dashboard analysing UK wages, employment, productivity and unemployment from 1949 to 2016, with era slicers, KPI cards, Power Query and DAX on a relational model.</p>
       <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span></div>
       <a class="repo" href="https://github.com/muneef97/uk-labour-market-powerbi-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
-    <div class="card proj reveal" data-c="ml">
-      <div class="meta">NLP · UWA</div><h3>Medical abstract classifier</h3>
-      <p>BiLSTM models that classify sentences in medical abstracts, comparing FastText and BioWordVec embeddings, evaluated with accuracy and macro-F1.</p>
-      <div class="chips"><span class="chip">PyTorch</span><span class="chip">BiLSTM</span><span class="chip">Word embeddings</span></div>
+    <div class="card proj reveal" data-c="bi">
+      <div class="meta">Data storytelling</div><h3>HR employee attrition analysis</h3>
+      <p>A Tableau story on why employees leave: overtime workers are nearly 3 times more likely to quit, and pay and promotion timing matter too. Decluttered with Gestalt principles, each insight with a recommendation.</p>
+      <div class="chips"><span class="chip">Tableau</span><span class="chip">Calculated fields</span><span class="chip">Data storytelling</span></div>
+      <a class="repo" href="https://github.com/muneef97/hr-attrition-tableau-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
     <div class="card proj reveal" data-c="ml">
-      <div class="meta">NLP · UWA</div><h3>Natural language inference comparison</h3>
+      <div class="meta">Analytics in R</div><h3>Global causes of death analysis</h3>
+      <p>Classification and clustering of deaths from 28 risk factors across countries, comparing logistic regression, a decision tree and KNN with LIME-based feature selection, plus an interactive Shiny app.</p>
+      <div class="chips"><span class="chip">R</span><span class="chip">caret</span><span class="chip">LIME</span><span class="chip">K-means</span><span class="chip">Shiny</span></div>
+      <a class="repo" href="https://github.com/muneef97/global-causes-of-death-analysis" target="_blank" rel="noopener">View on GitHub →</a>
+    </div>
+    <div class="card proj reveal" data-c="ml">
+      <div class="meta">NLP</div><h3>Natural language inference comparison</h3>
       <p>Compared NLI architectures, including Transformer and ESIM-lite models, with ablation studies to see which components matter.</p>
       <div class="chips"><span class="chip">Transformers</span><span class="chip">ESIM</span><span class="chip">Ablation</span></div>
       <a class="repo" href="https://github.com/muneef97/nlp-nli-architecture-comparison" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
-    <div class="card proj reveal" data-c="bi">
-      <div class="meta">Data storytelling · UWA</div><h3>HR employee attrition analysis</h3>
-      <p>A Tableau dashboard on employee attrition with engineered features such as an attrition flag and income bands, decluttered using Gestalt principles.</p>
-      <div class="chips"><span class="chip">Tableau</span><span class="chip">Feature engineering</span></div>
+    <div class="card proj reveal" data-c="ml">
+      <div class="meta">Machine learning</div><h3>Ridge regression from scratch and SVM</h3>
+      <p>Closed-form ridge regression in NumPy, checked against scikit-learn and SGD, then a grid-searched RBF SVM for breast cancer diagnosis with stratified cross-validation.</p>
+      <div class="chips"><span class="chip">NumPy</span><span class="chip">Ridge regression</span><span class="chip">SVM</span><span class="chip">GridSearchCV</span></div>
+      <a class="repo" href="https://github.com/muneef97/applied-machine-learning/tree/main/ridge-regression-and-svm" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
     <div class="card proj reveal" data-c="ml">
-      <div class="meta">Machine learning · UWA</div><h3>Face recognition on LFW</h3>
-      <p>Logistic regression, random forest and SVM classifiers with PCA, combined in an ensemble voting classifier on the Labeled Faces in the Wild dataset.</p>
-      <div class="chips"><span class="chip">scikit-learn</span><span class="chip">PCA</span><span class="chip">Ensembles</span></div>
-    </div>
-    <div class="card proj reveal" data-c="ml">
-      <div class="meta">Machine learning · UWA</div><h3>Models from scratch</h3>
-      <p>Implemented ridge regression from first principles, and built an SVM classifier that reached 98.2% accuracy.</p>
-      <div class="chips"><span class="chip">NumPy</span><span class="chip">Ridge regression</span><span class="chip">SVM</span></div>
-    </div>
-    <div class="card proj reveal" data-c="ml">
-      <div class="meta">Predictive modelling · UWA</div><h3>Applied predictive modelling in R</h3>
-      <p>Best-subset and Lasso regression, logistic regression and K-means clustering, with a focus on model selection and interpretation.</p>
-      <div class="chips"><span class="chip">R</span><span class="chip">Lasso</span><span class="chip">K-means</span></div>
-    </div>
-    <div class="card proj reveal" data-c="ml">
-      <div class="meta">Data analysis · UWA</div><h3>Global causes of death analysis</h3>
-      <p>Explored a countries and causes of death dataset in R, using clustering, decision trees and classification, with LIME for model explanations.</p>
-      <div class="chips"><span class="chip">R</span><span class="chip">Clustering</span><span class="chip">LIME</span></div>
-    </div>
-    <div class="card proj reveal" data-c="build">
-      <div class="meta">Personal</div><h3>Smart glass for Alzheimer's patients</h3>
-      <p>A wearable computer vision prototype built with OpenCV to support people living with Alzheimer's.</p>
-      <div class="chips"><span class="chip">OpenCV</span><span class="chip">Python</span></div>
-    </div>
-    <div class="card proj reveal" data-c="build">
-      <div class="meta">Personal</div><h3>Sudoku web app and solver</h3>
-      <p>A Sudoku game web app with user accounts, built with Flask and MySQL, plus a separate automatic solver.</p>
-      <div class="chips"><span class="chip">Flask</span><span class="chip">MySQL</span><span class="chip">Algorithms</span></div>
+      <div class="meta">Machine learning</div><h3>Ensembles and eigenfaces</h3>
+      <p>A soft-voting ensemble of logistic regression, random forest and SVM for breast cancer diagnosis, and face recognition on LFW comparing a random forest on raw pixels with PCA eigenfaces.</p>
+      <div class="chips"><span class="chip">scikit-learn</span><span class="chip">Voting ensemble</span><span class="chip">PCA</span><span class="chip">Random forest</span></div>
+      <a class="repo" href="https://github.com/muneef97/applied-machine-learning/tree/main/breast-cancer-and-face-recognition" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
   </div>
 </div></section>
