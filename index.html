@@ -135,6 +135,7 @@ h2{font-family:Fraunces,serif;font-size:clamp(1.6rem,4vw,2rem);margin-bottom:8px
 .proj p{font-size:.92rem;color:var(--muted);margin:8px 0 12px;flex:1}
 .proj .chips .chip{font-size:.74rem}
 .proj.hide{display:none}
+.repo{display:inline-block;margin-top:12px;margin-right:14px;font-size:.88rem;font-weight:600}
 .proj.pop{animation:pop .45s ease both}
 @keyframes pop{from{opacity:0;transform:scale(.94) translateY(10px)}to{opacity:1;transform:none}}
 
@@ -318,16 +319,22 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
       <div class="meta">Capstone · UWA</div><h3>CERBERUS: LLM guardrail service</h3>
       <p>A FastAPI guardrail service with LangGraph orchestration and JSON-Schema validation, using STRIDE/DREAD threat modelling to evaluate and remediate risks. Benchmarked at 86% acceptance with around 1 ms latency.</p>
       <div class="chips"><span class="chip">FastAPI</span><span class="chip">LangGraph</span><span class="chip">JSON Schema</span><span class="chip">Threat modelling</span></div>
+      <a class="repo" href="https://github.com/muneef97/cerberus-ms-guardrail" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
     <div class="card proj reveal" data-c="data">
       <div class="meta">Data warehousing · UWA</div><h3>Airline passenger data warehouse</h3>
       <p>Designed a star-schema warehouse for airline passenger data in PostgreSQL and Databricks with Tableau reporting, plus a Neo4j graph database of airline routes.</p>
       <div class="chips"><span class="chip">PostgreSQL</span><span class="chip">Databricks</span><span class="chip">Tableau</span><span class="chip">Neo4j</span></div>
+      <div>
+      <a class="repo" href="https://github.com/muneef97/airline-passenger-data-warehouse" target="_blank" rel="noopener">Warehouse on GitHub →</a>
+      <a class="repo" href="https://github.com/muneef97/airline-route-graph-neo4j" target="_blank" rel="noopener">Neo4j graph on GitHub →</a>
+      </div>
     </div>
     <div class="card proj reveal" data-c="bi">
       <div class="meta">Business intelligence · UWA</div><h3>UK labour market dashboard</h3>
       <p>A one-page Power BI dashboard analysing UK wages, employment, productivity and unemployment from 1949 to 2016, with era slicers, KPI cards, Power Query and DAX on a relational model.</p>
       <div class="chips"><span class="chip">Power BI</span><span class="chip">DAX</span><span class="chip">Power Query</span></div>
+      <a class="repo" href="https://github.com/muneef97/uk-labour-market-powerbi-dashboard" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
     <div class="card proj reveal" data-c="ml">
       <div class="meta">NLP · UWA</div><h3>Medical abstract classifier</h3>
@@ -338,6 +345,7 @@ footer{padding:28px 0;text-align:center;font-size:.82rem;color:var(--muted)}
       <div class="meta">NLP · UWA</div><h3>Natural language inference comparison</h3>
       <p>Compared NLI architectures, including Transformer and ESIM-lite models, with ablation studies to see which components matter.</p>
       <div class="chips"><span class="chip">Transformers</span><span class="chip">ESIM</span><span class="chip">Ablation</span></div>
+      <a class="repo" href="https://github.com/muneef97/nlp-nli-architecture-comparison" target="_blank" rel="noopener">View on GitHub →</a>
     </div>
     <div class="card proj reveal" data-c="bi">
       <div class="meta">Data storytelling · UWA</div><h3>HR employee attrition analysis</h3>
